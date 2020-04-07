@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fahrenheit to Celcius</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    .form-control{
+      width: 50%;
+    }
+  </style>
+  <script type="text/javascript">
+ function cel()
+  {
+    var tempfahrenheit = document.getElementById("fahrenheit").value;
+    var tempcelcius = (tempfahrenheit - 32) * 5 / 9;
+    document.getElementById("celcius").value = tempcelcius;
+  }
+  </script>
+</head>
+<body style="font-family: Montserrat;">
+<div class="container">
+        <div>
+        <h3 class="text-left mx-auto" style="padding: 5px 0; text-align: center;">Fahrenheit to Celcius</h3>
+            <div class="card" style="margin: 0 auto">
+              <div class="card-header font-italic">
+                Temperatur Celcius
+              </div>
+              <div class="card-body">
+                <h6 class="card-title">Input Value °Fahrenheit</h6>
+                <b>Formula : (x°F - 32) x 5/9 = ...°C</b>
+                <div class="row" style="padding-top: 10px;">
+                  <input type="text" class="form-control" id="fahrenheit" placeholder="fahrenheit">
+                  <input type="text" class="form-control" id="celcius" placeholder="Result" disabled>
+                </div>                
+                <button type="button" class="btn btn-success mt-3 float-right" onclick="cel()"> Convert</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

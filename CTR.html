@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Celcius to Reamur</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    .form-control{
+      width: 50%;
+    }
+  </style>
+  <script type="text/javascript">
+ function rea()
+  {
+    var tempcelcius = document.getElementById("celcius").value;
+    var tempreamur = tempcelcius * (4 / 5 );
+    document.getElementById("reamur").value = tempreamur;
+  }
+  </script>
+</head>
+<body style="font-family: Montserrat;">
+<div class="container">
+        <div>
+        <h3 class="text-left mx-auto" style="padding: 5px 0; text-align: center;">Celcius to Reamur</h3>
+            <div class="card" style="margin: 0 auto">
+              <div class="card-header font-italic">
+                Temperatur Reamur
+              </div>
+              <div class="card-body">
+                <h6 class="card-title">Input Value °Celsius</h6>
+                <b>Formula : x°C x 4/5 = ...°R</b>
+                <div class="row" style="padding-top: 10px;">
+                  <input type="text" class="form-control" id="celcius" placeholder="celcius">
+                  <input type="text" class="form-control" id="reamur" placeholder="Result" disabled>
+                </div>                
+                <button type="button" class="btn btn-success mt-3 float-right" onclick="rea()"> Convert</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
