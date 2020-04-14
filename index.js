@@ -17,7 +17,7 @@ app.on("ready", ()=> {
         webPreferences: {
             nodeIntegration: true
         },
-        title: "Aplikasi dokter2"
+        title: "Aplikasi Konversi Suhu"
     });
 
     homeWindow.loadURL(`file://${__dirname}/home.html`);
